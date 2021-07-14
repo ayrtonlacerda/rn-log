@@ -1,4 +1,4 @@
- const colors: any = {
+const colors: any = {
   reset: '\x1b[0m',
   bright: '\x1b[1m',
   dim: '\x1b[2m',
@@ -29,6 +29,6 @@
     white: '\x1b[47m',
     crimson: '\x1b[48m',
   },
-}
+};
 
-export default colors
+export default colors;

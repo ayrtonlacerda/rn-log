@@ -1,7 +1,6 @@
+import colors from './colors';
 
-import colors from './colors'
-
-const log = console.log
+const log = console.log;
 
 /**
  *  Print a json in terminal
@@ -16,8 +15,8 @@ function json(json: Object, color?: string): void {
   return log(
     `${colors.bg[color || 'black']} \n\n 📬 📬 📬 JSON 📬 📬 📬 \n\n`,
     `${JSON.stringify(json, null, 3)} ${colors.reset}\n`,
-    ` \n\n`
-  )
+    ` \n\n`,
+  );
 }
 
 /**
@@ -27,11 +26,9 @@ function json(json: Object, color?: string): void {
      log.info('testando todos os logs', anyVar === yes)
  */
 function info(txt: string, conditional?: boolean) {
-  if (conditional)
-    return log(`${colors.fg.cyan}ℹ️  ${txt}  ${colors.reset}\n\n`)
+  if (conditional) return log(`${colors.fg.cyan}ℹ️  ${txt}  ${colors.reset}\n\n`);
 
-  if (conditional === undefined)
-    return log(`${colors.fg.cyan}ℹ️  ${txt}  ${colors.reset}\n\n`)
+  if (conditional === undefined) return log(`${colors.fg.cyan}ℹ️  ${txt}  ${colors.reset}\n\n`);
 }
 
 /**
@@ -41,10 +38,8 @@ function info(txt: string, conditional?: boolean) {
      log.info('testando todos os logs', anyVar === yes)
  */
 function warning(txt: string, conditional?: boolean) {
-  if (conditional)
-    return log(`${colors.fg.yellow}⚠️  ${txt}  ${colors.reset}\n\n`)
-  if (conditional === undefined)
-    return log(`${colors.fg.yellow}⚠️  ${txt}  ${colors.reset}\n\n`)
+  if (conditional) return log(`${colors.fg.yellow}⚠️  ${txt}  ${colors.reset}\n\n`);
+  if (conditional === undefined) return log(`${colors.fg.yellow}⚠️  ${txt}  ${colors.reset}\n\n`);
 }
 
 /**
@@ -54,10 +49,9 @@ function warning(txt: string, conditional?: boolean) {
      log.info('testando todos os logs', anyVar === yes)
  */
 function error(txt: string, conditional?: boolean) {
-  if (conditional) return log(`${colors.bg.red}🆘  ${txt}  ${colors.reset}\n\n`)
+  if (conditional) return log(`${colors.bg.red}🆘  ${txt}  ${colors.reset}\n\n`);
 
-  if (conditional === undefined)
-    return log(`${colors.bg.red}🆘  ${txt}  ${colors.reset}\n\n`)
+  if (conditional === undefined) return log(`${colors.bg.red}🆘  ${txt}  ${colors.reset}\n\n`);
 }
 
 /**
@@ -67,11 +61,9 @@ function error(txt: string, conditional?: boolean) {
      log.info('testando todos os logs', anyVar === yes)
  */
 function success(txt: string, conditional?: boolean) {
-  if (conditional)
-    return log(`${colors.fg.green}✅  ${txt}  ${colors.reset}\n\n`)
+  if (conditional) return log(`${colors.fg.green}✅  ${txt}  ${colors.reset}\n\n`);
 
-  if (conditional === undefined)
-    return log(`${colors.fg.green}✅  ${txt}  ${colors.reset}\n\n`)
+  if (conditional === undefined) return log(`${colors.fg.green}✅  ${txt}  ${colors.reset}\n\n`);
 }
 
 export default {
@@ -80,4 +72,4 @@ export default {
   warning,
   error,
   success,
-}
+};
