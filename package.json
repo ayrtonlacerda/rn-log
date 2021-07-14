@@ -2,7 +2,8 @@
   "name": "rn-log",
   "version": "1.0.0",
   "description": "pretty logs in terminal for react native without debug mode",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -11,8 +12,12 @@
   },
   "author": "ayrton lacerda",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayrtonlacerda/rn-log"
+  },
   "type": "module",
-  "keywords": [],
+  "keywords": ["react-native","log", "terminal"],
   "devDependencies": {
     "prettier": "^2.3.2",
     "tslint": "^6.1.3",
