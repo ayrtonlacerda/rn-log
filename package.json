@@ -4,10 +4,14 @@
   "description": "pretty logs in terminal for react native without debug mode",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tsc"
   },
   "author": "ayrton lacerda",
   "license": "ISC",
   "type": "module",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
